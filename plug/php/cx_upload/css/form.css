@@ -1,0 +1,202 @@
+
+/**
+ * input 输入框 s
+ */
+div.input-list-wrap{
+	overflow:hidden;
+	
+}
+
+
+
+/**
+ * textarea s
+ */
+div.textarea-control-wrap{
+	position:relative;
+	/*background-color:red;*/
+	/*margin:20px;*/
+	width:310px;
+	border-radius:5px;
+	float:left;
+
+}
+
+/*提示, wrap*/
+div.textarea-control-wrap{
+	height:120px;
+
+}
+
+
+
+/**
+ *  input, textarea 的公共
+ */
+
+/*外围*/
+div.textarea-control-wrap,div.input-control-wrap{
+	border:1px solid #ccc;
+	
+}
+
+div.upload-image-list-wrap{
+	width:375px; /*3*125*/
+	height:auto;
+	border:none 0px;
+	padding-bottom:5px;
+}
+
+/*单个图片的外围*/
+li.signle-image-wrap{
+	width:120px;
+	height:120px;
+	float:left;
+	/*background-color:#aaa;*/
+	margin:5px 0px 0px 5px;
+	border-radius:5px;
+	position:relative;
+	overflow:hidden;
+	display:inline;
+}
+
+
+/*按钮的外围,遮罩*/
+div.image-btn-wrap,div.image-hide-layer{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	display:none;
+}
+
+/*遮罩*/
+div.image-hide-layer{
+	opacity:0.3;
+	filter:alpha(opacity:30);
+	background-color:#000;
+	z-index:1;
+}
+div.image-btn-wrap{
+	z-index:6;
+	/*background-color:#000;*/
+	/*opacity:*/
+}
+
+/*按钮的背景*/
+div.image-btn-wrap-bg{
+	background-color:#000;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:0;
+	opacity:0;
+	filter:alpha(opacity:0);
+}
+
+
+/*顶部的按钮,底部按钮*/
+div.image-top-btn-wrap,div.image-bottom-btn-wrap{
+	position:absolute;
+	left:0px;
+	width:100%;
+	height:17px;
+	overflow:hidden;
+	z-index:1;
+	/*background-color:#aaa;*/
+}
+
+/*删除按钮*/
+div.image-top-btn-wrap{
+	top:0px;
+}
+a.image-delete-btn{
+	display:inline-block;
+	width:17px;
+	height:17px;
+	background-image:url(../images/static/close.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	border-radius:5px;
+	float:right;
+	/*margin-right:2px;*/
+}
+
+/*询问按钮*/
+div.image-bottom-btn-wrap{
+	height:17px;
+	top:103px;/*120-17*/
+}
+
+/*当前的图片*/
+div.image-current-wrap{
+	width:120px;
+	height:120px;
+	overflow:hidden;
+}
+
+div.image-current-wrap img{
+	width:100%;
+}
+
+/*加载,加载完成*/
+div.image-loadding-wrap,div.image-has-loaded-wrap{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+/*加载中*/
+div.image-loadding-wrap{
+	/*background-color:#ccc;*/
+	z-index:3;
+	/*display:none;*/
+	overflow:hidden;
+}
+
+div.image-loadding-wrap img{
+	display:inline-block;
+	width:100%;
+	/*height:*/
+}
+
+/*图片上传域*/
+div.image-upload-field-ico-wrap{
+	background-image:url(./images/static/img_upload.png);
+	border-radius:5px;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	cursor:pointer;
+	/*overflow:auto;*/
+}
+
+input.image-upload-file-field-input{
+	display:block;
+	position:absolute;
+
+	left:0px;
+	top:0px;
+	_left:-5px; /*IE6*/
+	*left:-5px; /*IE7*/
+	width:100%;
+	height:100%;
+	font-size:40px;
+	line-height:120px;
+	cursor:pointer;
+	opacity:0;
+	filter:alpha(opacity:0);
+}
+
+
+/*上传的iframe*/
+iframe.upload-image-frame{
+	display:block;
+	float:left;
+	width:100%;
+	height:100%;
+}

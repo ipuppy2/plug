@@ -1,0 +1,33 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+ul li{ 	
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+	outline:none;
+}
+
+/*a:focus{
+	outline:none;
+	blr:expression(this.onFocus=this.blur());
+}
+
+a:active{
+	outline:none;
+	star:expression(this.onFocus=this.blur());
+}*/
+
+input,textarea{
+	outline:none;
+	font-family:"Microsoft Yahei","宋体";
+}
+
+body{
+	font-family:"Microsoft Yahei","宋体";
+	font-size:13px;
+
+}
